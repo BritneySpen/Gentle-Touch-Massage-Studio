@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Massage Appointment Booking</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f3f3f3; margin: 0; padding: 0; }
+        .container { max-width: 600px; margin: 50px auto; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; }
+        input, select, textarea {
+            width: 100%; padding: 10px; margin: 8px 0;
+            border: 1px solid #ccc; border-radius: 5px; font-size: 16px;
+        }
+        button {
+            width: 100%; padding: 12px; background: #4CAF50; color: white;
+            border: none; border-radius: 5px; font-size: 18px; cursor: pointer;
+        }
+        button:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Book a Massage Appointment</h2>
+        <form>
+            <label>Your Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Your Phone Number</label>
+            <input type="text" placeholder="Enter phone number" required>
+
+            <label>Select Service</label>
+            <select required>
+                <option value="">Choose a service</option>
+                <option>Swedish Massage</option>
+                <option>Deep Tissue Massage</option>
+                <option>Hot Stone Massage</option>
+                <option>Relaxation Massage</option>
+            </select>
+
+            <label>Select Date</label>
+            <input type="date" required>
+
+            <label>Select Time</label>
+            <input type="time" required>
+
+            <label>Additional Notes</label>
+            <textarea rows="4" placeholder="Optional"></textarea>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </div>
+</body>
+</html>
